@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro Centralizado</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Botão para abrir o cadastro -->
+    <button class="open-btn" id="openModal">
+      <i class="bx bx-user-plus"></i>
+    </button>
+
+    <!-- Fundo escuro -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Aba de cadastro -->
+    <div class="modal" id="modal">
+      <button class="close-btn" id="closeModal">
+        <i class="bx bx-x"></i>
+      </button>
+      <h2>Cadastro</h2>
+      <form action="#">
+        <div class="input-box">
+          <input type="text" id="username" required />
+          <label for="username">Username</label>
+          <i class="bx bxs-user"></i>
+        </div>
+
+        <div class="input-box">
+          <input type="email" id="email" required />
+          <label for="email">Email</label>
+          <i class="bx bxs-envelope"></i>
+        </div>
+
+        <div class="input-box">
+          <input type="password" id="password" required />
+          <label for="password">Password</label>
+          <i class="bx bxs-lock-alt"></i>
+        </div>
+
+        <button type="submit" class="btn">Cadastrar</button>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
